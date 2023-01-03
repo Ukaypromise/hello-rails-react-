@@ -13,7 +13,7 @@ const Greeting = () => {
 
   return (
     <>
-      <h1>Random Greeting:</h1>
+      <h1>A Random Greeting:</h1>
       <p>{content}</p>
       <button type="button" onClick={() => dispatch(fetchGreeting())}>
         generate new
