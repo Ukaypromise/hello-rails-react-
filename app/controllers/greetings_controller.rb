@@ -2,9 +2,8 @@ class GreetingsController < ApplicationController
   # before_action :set_greeting, only: %i[ show edit update destroy ]
 
   def random
-    random_number = 1 + rand(Greeting.count)
-    @mesage = Greeting.find(random_number)
-    render json: @mesage
+    @message = Greeting.find(rand(1..5))
+    render json: @message
   end
 
   # # GET /greetings or /greetings.json
