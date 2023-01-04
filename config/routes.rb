@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
 
   namespace :api, defaults: { format: 'json' } do
-    get 'message', to: 'greetings#random'
+    get 'message', to: 'greetings#index'
   end
 
-  get 'root/index'
-  get 'greetings/random'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
   root 'root#index'
+  get 'api/index'
+  get 'root/index'
 end

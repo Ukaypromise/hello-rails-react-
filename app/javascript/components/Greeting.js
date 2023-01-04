@@ -1,22 +1,23 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchGreeting } from "../redux/greetings/greetingsSlice";
+import { getMessage } from '../redux/greetings/greetingsSlice';
 
 const Greeting = () => {
   const greetingShow = useSelector((state) => state.greetings.message);
   const status = useSelector((state) => state.greetings.status);
   const dispatch = useDispatch();
   let content;
-  if (status === "success") {
-    content = greetingShow.message;
+  if (status === 'succeeded') {
+    content = greetingShow[0].message;
   }
 
   return (
     <>
-      <h1>A Random Greeting:</h1>
-      <p>{content}</p>
-      <button type="button" onClick={() => dispatch(fetchGreeting())}>
-        generate new
+      <h3>This is the random message:</h3>
+      
+      <p>[ {content} ]</p>
+      <button type="button" onClick={() => dispatch(getMessage())}>
+        Show random greeting
       </button>
     </>
   );

@@ -3,18 +3,23 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
+# Gem to use postgres data base
+gem 'pg'
+
+# This gem leave make connect with others servers
+gem 'rack-cors'
+
+# Gem to allow use a file to protect my user name and password
+gem 'figaro'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-gem 'rack-cors'
-gem 'react-rails'
-gem 'webpacker', '~> 5.0'
-
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+# Use sqlite3 as the database for Active Record
+# gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
