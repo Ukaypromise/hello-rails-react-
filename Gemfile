@@ -11,6 +11,7 @@ gem 'sprockets-rails'
 
 gem 'rack-cors'
 gem 'react-rails'
+gem 'webpacker', '~> 5.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
