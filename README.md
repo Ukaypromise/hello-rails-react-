@@ -70,7 +70,6 @@ This project is to implement a connection between a Ruby on Rails back-end and R
 <details>
   <summary>Backend</summary>
   <ul>
-    <!-- <li><a href="https://reactjs.org/">React.js</a></li> -->
     <li><a href="https://rubyonrails.org/">RubyOnRails.rb</a></li>
   </ul>
 </details>
@@ -78,8 +77,7 @@ This project is to implement a connection between a Ruby on Rails back-end and R
 <details>
   <summary>Frontend</summary>
   <ul>
-    <!-- <li><a href="https://reactjs.org/">React.js</a></li> -->
-    <li><a href="https://rubyonrails.org/">RubyOnRails.rb</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
 
@@ -131,8 +129,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/ErikStoupignan/Recipe-app.git
-  cd setup-ror-project
+  git clone https://github.com/Ukaypromise/hello-rails-react-.git
 ```
 
 
@@ -150,7 +147,7 @@ To run the project, execute the following command:
 
 
 ```sh
-  rails server -p 3000
+  rails server -p 3001
 ```
 
 <!-- ### Run tests
